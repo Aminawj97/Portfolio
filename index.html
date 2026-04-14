@@ -1,13 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amina Ali - UX Designer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Hi, I’m Amina 👋</h1>
-  <p>This is my portfolio.</p>
+
+    <!-- NAVIGATION -->
+    <!-- Sticky menu that follows when you scroll -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">AA</a>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <!-- Dark mode toggle placeholder (can be added with JS later) -->
+            <div class="theme-toggle">
+                <span class="theme-icon"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>dark-mode</title> <g id="Layer_2" data-name="Layer 2"> <g id="Icons"> <g> <rect width="48" height="48" fill="none"></rect> <g> <path d="M14,24A10,10,0,0,0,24,34V14A10,10,0,0,0,14,24Z"></path> <path d="M24,2A22,22,0,1,0,46,24,21.9,21.9,0,0,0,24,2ZM6,24A18.1,18.1,0,0,1,24,6v8a10,10,0,0,1,0,20v8A18.1,18.1,0,0,1,6,24Z"></path> </g> </g> </g> </g> </g></svg></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <!-- Large welcome section at the top -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hi, I'm</p>
+                <h1 class="hero-name">Amina Ali</h1>
+                <h2 class="hero-title">UX Designer Student</h2>
+                <p class="hero-description">
+                    With a passion for creating user-friendly solutions and a background in customer service 
+                    from Klarna and LG, I combine empathy with creative problem-solving.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View my projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact me</a>
+                </div>
+            </div>
+            
+            <!-- Profile image -->
+            <div class="hero-image">
+                <div class="me.png-container">
+<div class="placeholder-circle">
+    <img src="images/Me.png" alt="Amina Ali">
+</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <span>Scroll down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <!-- About me section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Get to know me</span>
+                <h2 class="section-title">About me</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead-text">
+                        I'm a positive and empathetic person who is passionate about creating user-friendly solutions. 
+                        Through my experience in service and customer support, I have developed strong collaboration skills, 
+                        adaptability, and a deep understanding of different perspectives.
+                    </p>
+                    <p>
+                        I enjoy making others feel secure and thrive in environments where I can combine 
+                        creativity with problem-solving to improve the user experience. My background in 
+                        customer service at Klarna and LG has taught me to truly listen to users and 
+                        understand their needs.
+                    </p>
+                    <p>
+                        I'm currently studying UX Design at STI Stockholm Technical Institute and looking for an 
+                        internship (LIA) where I can continue to develop and contribute with my dedication.
+                    </p>
+                </div>
+                
+                <!-- Experience -->
+                <div class="experience-timeline">
+                    <h3>Experience</h3>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2025 - Present</span>
+                            <h4>UX Design Student</h4>
+                            <p class="timeline-company">STI Stockholm Technical Institute</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2022 - 2023</span>
+                            <h4>Service Assistant</h4>
+                            <p class="timeline-company">LG Nordic</p>
+                            <p>Handled spare parts and technical support for workshops in the Nordic region</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2021 - 2022</span>
+                            <h4>Merchant Support & Customer Service</h4>
+                            <p class="timeline-company">Klarna (Teleperformance)</p>
+                            <p>Assisted merchants with payment solutions and resolved disputes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <!-- Skills -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What I do</span>
+                <h2 class="section-title">Skills</h2>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- UX/Design Skills -->
+                <div class="skill-category">
+                    <div class="category-icon"></div>
+                    <h3>UX & Design</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">UX Research</span>
+                        <span class="skill-tag">User Interviews</span>
+                        <span class="skill-tag">User Testing</span>
+                        <span class="skill-tag">Personas</span>
+                        <span class="skill-tag">User Journeys</span>
+                        <span class="skill-tag">Wireframing</span>
+                        <span class="skill-tag">Prototyping</span>
+                    </div>
+                </div>
+                
+                <!-- Tools -->
+                <div class="skill-category">
+                    <div class="category-icon"></div>
+                    <h3>Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                    </div>
+                </div>
+                
+                <!-- Soft Skills -->
+                <div class="skill-category">
+                    <div class="category-icon"></div>
+                    <h3>Personal qualities</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Collaboration</span>
+                        <span class="skill-tag">Empathy</span>
+                        <span class="skill-tag">Problem-solving</span>
+                        <span class="skill-tag">Adaptability</span>
+                        <span class="skill-tag">Customer focus</span>
+                    </div>
+                </div>
+                
+                <!-- Languages -->
+                <div class="skill-category">
+                    <div class="category-icon"></div>
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Swedish (Native)</span>
+                        <span class="skill-tag">English (Fluent)</span>
+                        <span class="skill-tag">Somali</span>
+                        <span class="skill-tag">Korean</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <!-- Projects in grid format -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">My work</span>
+                <h2 class="section-title">Projects</h2>
+            </div>
+            
+            <div class="projects-grid">
+                
+                <article class="project-card featured">
+                    <div class="project-image">
+                        <img src="images/App prortyp.png" alt="WeMove app design prototype" />
+                        <div class="project-overlay">
+                            <span class="project-category">UX Design • Research • Testing</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-content">
+                        <h3 class="project-title">WeMove</h3>
+                        <p class="project-subtitle">Fitness app for safety and community</p>
+                        
+                        <p class="project-description">
+                            An app that helps women find safe workout companions through BankID verification, 
+                            matching, and safety features like live GPS and SOS button.
+                        </p>
+                        
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number">7</span>
+                                <span class="stat-label">User interviews</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">5</span>
+                                <span class="stat-label">User tests</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">8</span>
+                                <span class="stat-label">Weeks</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-tags">
+                            <span class="tag">Figma</span>
+                            <span class="tag">Research</span>
+                            <span class="tag">Prototyping</span>
+                            <span class="tag">Testing</span>
+                        </div>
+                        
+                        <a href="wemove-case-study.html" class="project-link">
+                            Read case study <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Placeholder for future projects -->
+                <article class="project-card coming-soon">
+                    <div class="coming-soon-content">
+                        <div class="coming-soon-icon"></div>
+                        <h3>More projects coming soon</h3>
+                        <p>I'm working on new exciting case studies...</p>
+                    </div>
+                </article>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-label">Let's talk</span>
+                <h2 class="section-title">Contact me</h2>
+                <p class="section-description">
+                    I'm looking for an internship (LIA) in UX Design and would love to hear from you!<br>
+                    Don't hesitate to reach out if you want to know more about me or my work.
+                </p>
+            </div>
+            
+            <div class="contact-cards">
+                <a href="mailto:aminawj@hotmail.com" class="contact-card">
+                    <div class="contact-icon"><svg fill="#000000" viewBox="0 0 24 24" id="mail" data-name="Flat Line" xmlns="http://www.w3.org/2000/svg" class="icon flat-line"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path id="secondary" d="M21,6V8l-9,5L3,8V6A1,1,0,0,1,4,5H20A1,1,0,0,1,21,6Z" style="fill: #6D28D9; stroke-width: 2;"></path><path id="primary" d="M20,19H4a1,1,0,0,1-1-1V6A1,1,0,0,1,4,5H20a1,1,0,0,1,1,1V18A1,1,0,0,1,20,19ZM20,5H4A1,1,0,0,0,3,6V8l9,5,9-5V6A1,1,0,0,0,20,5Z" style="fill: none; stroke: #7C3AED; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></g></svg></div>
+                    <h3>Email</h3>
+                    <p>aminawj@hotmail.com</p>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/aminaali-397787257" target="_blank" class="contact-card">
+                    <div class="contact-icon"><svg height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 382 382" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path style="fill:#6D28D9;" d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889 C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056 H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806 c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1 s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73 c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079 c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426 c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472 L341.91,330.654L341.91,330.654z"></path> </g></svg></div>
+                    <h3>LinkedIn</h3>
+                    <p>Amina Ali</p>
+                </a>
+                
+                <a href="tel:0739869798" class="contact-card">
+                    <div class="contact-icon"><svg viewBox="0 0 50 50" id="Message_And_Communication_Icons" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <g> <g> <g> <g> <path d="M34.1,4.8l-0.3,2l8.4,1.5c0.3,0.1,0.5,0.4,0.5,0.7l-6.2,35.2c-0.1,0.3-0.4,0.5-0.7,0.5 l-8.4-1.5l-0.6,3.5L39,48.7l7.4-41.8L34.1,4.8z M37,7c-0.2,0-0.3-0.2-0.3-0.4c0-0.2,0.2-0.3,0.4-0.3c0.2,0,0.3,0.2,0.3,0.4 S37.2,7,37,7z" style="fill:#7C3AED;"></path> </g> </g> </g> </g> <g> <g> <path d="M38.4,47.7l-22.7-4L23,2.2l22.7,4L38.4,47.7z M17.1,42.7l20.4,3.6l6.9-39.1L24,3.6L17.1,42.7z" style="fill:#6D28D9;"></path> </g> </g> <g> <g> <path d="M38.4,47.7l-22.7-4L23,2.2l22.7,4L38.4,47.7z M17.1,42.7l20.4,3.6l6.9-39.1L24,3.6L17.1,42.7z" style="fill:#6D28D9;"></path> </g> </g> <g> <g> <path d="M37.9,8.5c-0.1,0-0.1,0-0.2,0h0l-7.9-1.4c-0.3,0-0.5-0.2-0.7-0.4s-0.2-0.5-0.2-0.8l0.4-2.4 l10,1.8l-0.4,2.4C38.9,8.1,38.4,8.5,37.9,8.5z M30.1,5.9l7.7,1.4L38,6.2l-7.7-1.4L30.1,5.9z" style="fill:#6D28D9;"></path> </g> </g> <g> <g> <path d="M38.8,6.7l-1.4-0.2c0,0.1,0.1,0.1,0,0.2C37.4,6.9,37.2,7,37,7c-0.2,0-0.3-0.2-0.3-0.4 c0-0.1,0.1-0.1,0.1-0.2L29.3,5C29.2,5,29,5.1,29,5.2l-0.3,1.6c-0.1,0.4,0.2,0.8,0.6,0.9l8.5,1.5c0.4,0.1,0.8-0.2,0.9-0.6L39,7 C39.1,6.9,39,6.7,38.8,6.7z" style="fill:#7C3AED;"></path> </g> </g> <g> <g> <path d="M37.9,8.5c-0.1,0-0.1,0-0.2,0h0l-7.9-1.4c-0.3,0-0.5-0.2-0.7-0.4s-0.2-0.5-0.2-0.8l0.4-2.4 l10,1.8l-0.4,2.4C38.9,8.1,38.4,8.5,37.9,8.5z M30.1,5.9l7.7,1.4L38,6.2l-7.7-1.4L30.1,5.9z" style="fill:#6D28D9;"></path> </g> </g> <g> <g> <rect height="32.3" style="fill:#6D28D9;" transform="matrix(0.9847 0.1742 -0.1742 0.9847 4.4173 -3.489)" width="1.2" x="21.5" y="7.3"></rect> </g> </g> </g> <g> <g> <rect height="1.2" style="fill:#6D28D9;" width="11.2" x="5.3" y="41.8"></rect> </g> </g> <g> <g> <rect height="1.2" style="fill:#6D28D9;" width="7" x="10" y="39.4"></rect> </g> </g> <g> <g> <rect height="1.2" style="fill:#6D28D9;" width="3.4" x="13.9" y="36.9"></rect> </g> </g> <g> <g> <rect height="1.2" style="fill:#6D28D9;" width="1.9" x="11.6" y="33.5"></rect> </g> </g> </g> </g></svg></div>
+                    <h3>Phone</h3>
+                    <p>073 986 97 98</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Amina Ali. UX Designer Student at STI Stockholm Technical Institute.</p>
+            <p class="footer-note">Designed and built with </p>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button can be added with JavaScript later -->
+    
 </body>
 </html>
- 
