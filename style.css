@@ -1296,36 +1296,3 @@ a {
     font-size: 0.9rem;
     margin-top: 0.5rem;
 }
-}
-.image-container {
-    width: 100%;
-    max-width: 400px;
-}
-/* === IMAGE GRID 🖼️ === */
-
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--spacing-md);
-    margin: var(--spacing-md) 0;
-}
-
-.image-grid img {
-    width: 100%;
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-md);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    object-fit: cover;
-}
-
-.image-grid img:hover {
-    transform: translateY(-4px) scale(1.02);
-    box-shadow: var(--shadow-glow);
-}
-
-/* Optional: caption styling */
-.image-caption {
-    text-align: center;
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-    margin-top: 0.5rem;
